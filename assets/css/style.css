@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #3E423E;
+}
+
+/*Consolidated header selectors by replacing 'header' content with 'header' semantic elements.
+This applies to rest of the codes below; consolidated redundant CSS selectors into appropriate sections
+(e.g. all selectors in the 'main' section has been unified into the main CSS selector, instead of having a unique selector for each heading.)
+*/
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+figure {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*changed the big illustrative photo in the webpage to 'figure' semantic for ease of viewing in HTML code & so I can also add an alt attribute.*/
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*Changed the big body of content into 'main' semantic element.*/
+
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+aside h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*Changed the sidebar content into 'aside' semantic elements to better accessibility. 
+Also consolidated duplicate/redundant selectors for this section*/
+
+.benefits-icon {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefits-icon img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*unified the CSS selectors for each sidebar icons into 'benefits-icon'*/
+
+.content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content img {
+    max-height: 200px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*changed the repeating class selectors for the main senction into 'content' to reduce redundancy in the CSS file*/
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+/*Changed the company logo & copyright into the footer semantic section in HTML for better accessibility*/
